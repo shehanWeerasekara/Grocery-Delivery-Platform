@@ -1,7 +1,7 @@
 "use client";
 
 import { Toaster } from "react-hot-toast";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "@/pages/Login";
 import AppLayout from "@/pages/AppLayout";
 import HomeRoute from "@/pages/Home";
@@ -14,9 +14,9 @@ import OrderTracking from "@/pages/OrderTracking";
 import Addresses from "@/pages/Addresses";
 import ProtectedRoutes from "@/components/ProtectedRoutes";
 
-export default function Home() {
+export default function AppRoutes() {
 	return (
-		<>
+		<BrowserRouter>
 			<Toaster
 				position="top-right"
 				toastOptions={{
@@ -47,6 +47,6 @@ export default function Home() {
 					</Route>
 				</Route>
 			</Routes>
-		</>
+		</BrowserRouter>
 	);
 }

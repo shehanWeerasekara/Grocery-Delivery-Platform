@@ -1,7 +1,7 @@
 import React from "react";
 
 const FlashDeals = () => {
-	return <div></div>;
+	return <div>flash deals</div>;
 };
 
 export default FlashDeals;
